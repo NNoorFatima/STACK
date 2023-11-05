@@ -1,0 +1,12 @@
+for implementting a queue using stack follow this 
+1- create two stacks 
+2- each time you have to push an element
+  if stack is empty push to top 
+else
+  move all elements of stack 1 to stack 2 
+push element in empty stack 1 
+and move back elements from stack 2 to stack 1
+eg stack has elements 1 2 3 where 1 is the top
+now when you insert 4 it will empty the stack insert 4 and then move 3 2 1 back 
+so new stsack is 1 2 3 4
+dequeue doesnt use any different logic works in the same way
