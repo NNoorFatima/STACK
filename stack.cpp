@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include "stack_array.h"
+#include "string_reversal.h"
+#include "expressionconversion.h"
 using namespace std;
 int main()
 {
@@ -17,4 +19,12 @@ int main()
 	b.pop();
 	cout << endl;
 	cout<<b.isempty();
+	cout << endl;
+	cout << StringReversal("noorshahid");
+	cout << endl;
+	string exp = "(x+y)*(d-x)/a";
+
+	// Function call
+	infixToPostfix(exp);
+	cout << infixToPrefix(exp);
 }
